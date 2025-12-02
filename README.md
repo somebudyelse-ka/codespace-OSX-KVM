@@ -3,10 +3,6 @@ Click the green "Code" dropdown on GitHub, go to the "Codepsaces" tab, and then 
 
 After it's finished setting up, go to the "Terminal" tab if necessary, and run `. setup.sh`.
 
-It will ask you for things like country, email, and stuff. Just put in a `.` for everything that has a default value (something between the `[]`), and for the ones that don't, `a` will also work fine.
-
-For the email, do something like `a@a.co`. It doesn't have to be real.
-
 Once that's done, run `./OpenCore-Boot.sh`. It should pop up a notification in the bottom left saying "Your port on 6080 is available."
 
 Click "Open in browser." Then, simply click "Connect".
