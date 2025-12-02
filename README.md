@@ -17,6 +17,7 @@ Once that's done, run `./OpenCore-Boot.sh`. It should pop up a notification in t
 
 Click "Open in browser." Then, simply click "Connect".
 
+# Original README.md
 
 ### Note
 
