@@ -1,11 +1,21 @@
 ### How To:
-Click the green "Code" dropdown on GitHub, go to the "Codepsaces" tab, and then "New Codespace on master".
+Click the green "Code" dropdown on GitHub, go to the "Codepsaces" tab, and then "Create Codespace on master".
 
 After it's finished setting up, go to the "Terminal" tab if necessary, and run `. setup.sh`.
 
 Once that's done, run `./OpenCore-Boot.sh`. It should pop up a notification in the bottom left saying "Your port on 6080 is available."
 
-Click "Open in browser." Then, simply click "Connect".
+Click "Open in browser." Click the link for `vnc.html`. Then, simply click "Connect".
+
+On the left-hand side, there's a small arrow. Click it, and then open up the settings. Where it says "No scaling", change it to "Local scaling". Click "Advanced options", and then turn on "Automatic reconnect".
+
+Close off the settings, click back into the regular screen, and then press the enter key. Wait a couple minutes, and you should be in the High Sierra recovery!
+
+From here, click on the "Utilities", and open Terminal. Run this command: `nvram IASUCatalogURL="http://swscan.apple.com/content/catalogs/others/index-10.13-10.12-10.11-10.10-10.9-mountainlion-lion-snowleopard-leopard.merged-1.sucatalog"`.
+
+Now, click on the "Terminal" on the top bar, and select "Quit Terminal". Go in to Disk Utility, find the QEMU HARDDISK that has the most space, and click "Erase."
+
+Close off Disk Utility, and go through the installer. Every 15 minutes or so, go back to the codespace tab and type some random stuff so that it doesn't shut down from inactivity.
 
 # Original README.md
 
