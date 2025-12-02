@@ -1,3 +1,23 @@
+### How To:
+Click the green "Code" dropdown on GitHub, go to the "Codepsaces" tab, and then "New Codespace on master".
+
+After it's finished setting up, go to the "Terminal" tab if necessary, and run `df -h`.
+
+Find the one that says `/` for `Mounted on`, and make a note of what's in the `Available` column. It should be something like `20G`, but it will be higher or lower depending on some things.
+
+Now, run `. setup.sh`.
+
+It will ask you for things like country, email, and stuff. Just put in a `.` for everything that has a default value, and for the ones that don't, `a` will also work fine.
+
+For the email, do something like `a@a.co`. It doesn't have to be real.
+
+Subtract one from the `Available` number you wrote down earlier and put that in when it asks you. So, if it was `20G`, put in `19` (without the G).
+
+Once that's done, run `./OpenCore-Boot.sh`. It should pop up a notification in the bottom left saying "Your port on 6080 is available."
+
+Click "Open in browser." Then, simply click "Connect".
+
+
 ### Note
 
 This `README.md` documents the process of creating a `Virtual Hackintosh`
