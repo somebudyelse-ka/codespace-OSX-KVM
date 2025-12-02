@@ -7,4 +7,4 @@ openssl req -x509 -nodes -newkey rsa:3072 -keyout novnc.pem -out novnc.pem -days
 ./fetch-macOS-v2.py -s high-sierra
 dmg2img -i BaseSystem.dmg BaseSystem.img
 rm BaseSystem.dmg
-qemu-img create -f qcow2 mac_hdd_ng.img $(( $(df -BG / | awk 'NR==2{gsub("G","",$4); print $4}') - 1 ))G
+qemu-img create -f qcow2 mac_hdd_ng.img 21G
